@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class RestaurantsActivity extends AppCompatActivity {
 
@@ -21,8 +22,8 @@ public class RestaurantsActivity extends AppCompatActivity {
         places.add(new Place("Villa Rosa", "Armii Krajowej 153", 3));
         places.add(new Place("Centaur", "Armii Krajowej 66", 5));
         PlaceAdapter placeAdapter = new PlaceAdapter(this, places);
+        Collections.sort(places,new PlaceComparator());
 
-        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(placeAdapter);
     }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MuseumsActivity extends AppCompatActivity {
 
@@ -20,8 +21,8 @@ public class MuseumsActivity extends AppCompatActivity {
         places.add(new Place("Muzeum najmniejszych książek", "Traktorzystów 5", 4));
         places.add(new Place("Muzeum misyjne", "Panewnicka 76", 5));
         PlaceAdapter placeAdapter = new PlaceAdapter(this, places);
+        Collections.sort(places,new PlaceComparator());
 
-        // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(placeAdapter);
     }

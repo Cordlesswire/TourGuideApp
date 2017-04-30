@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MonumentsActivity extends AppCompatActivity {
 
@@ -17,7 +18,7 @@ public class MonumentsActivity extends AppCompatActivity {
         places.add(new Place("Pomnik Powstańców Sląskich", "Aleja Korfantego 35", 5, R.drawable.pomnik));
         places.add(new Place("Spodek", "Aleja Korfantego 35", 5, R.drawable.spodek));
         PlaceAdapter placeAdapter = new PlaceAdapter(this, places);
-
+        Collections.sort(places,new PlaceComparator());
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(placeAdapter);
     }
