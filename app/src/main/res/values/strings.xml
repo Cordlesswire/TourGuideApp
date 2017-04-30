@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="cinemasActivity">Cinemas</string>
+    <string name="monumentsActivity">Monuments</string>
+    <string name="museumsActivity">Museums</string>
+    <string name="restaurantsActivity">Restaurants</string>
+</resources>
