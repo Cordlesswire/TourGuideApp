@@ -4,5 +4,5 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:dividerHeight="10.0sp"
+    android:dividerHeight="@dimen/divider_height"
     android:background="@color/mainBackground" />

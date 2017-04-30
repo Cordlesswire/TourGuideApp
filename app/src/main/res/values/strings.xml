@@ -4,4 +4,8 @@
     <string name="monumentsActivity">Monuments</string>
     <string name="museumsActivity">Museums</string>
     <string name="restaurantsActivity">Restaurants</string>
+    <string name="restaurant1">Zaklęty Czardasz</string>
+    <string name="restaurant1_address">Kopernika 9</string>
+    <string name="restaurant2">Belcanto</string>
+    <string name="restaurant2_address">Mickiewicza 91</string>
 </resources>

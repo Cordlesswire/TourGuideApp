@@ -16,11 +16,8 @@ public class RestaurantsActivity extends AppCompatActivity {
 
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Zaklęty Czardasz", "Kopernika 9", 4));
-        places.add(new Place("Belcanto", "Ligocka 103", 4));
-        places.add(new Place("Via Toscana", "Uniwersytecka 13", 5));
-        places.add(new Place("Villa Rosa", "Armii Krajowej 153", 3));
-        places.add(new Place("Centaur", "Armii Krajowej 66", 5));
+        places.add(new Place(getResources().getString(R.string.restaurant1), getResources().getString(R.string.restaurant1_address) , 4));
+        places.add(new Place(getResources().getString(R.string.restaurant2), getResources().getString(R.string.restaurant2_address), 4));
         PlaceAdapter placeAdapter = new PlaceAdapter(this, places);
         Collections.sort(places,new PlaceComparator());
 
