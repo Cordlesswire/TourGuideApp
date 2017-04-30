@@ -28,12 +28,9 @@ public class CinemasActivity extends AppCompatActivity {
         }
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Cinema City", "Gliwicka 44", 4));
-        places.add(new Place("Multikino", "3 Maja 30", 3));
-        places.add(new Place("Swiatowid", "3 Maja 7", 5));
-        places.add(new Place("Cinema City", "Chorzowska 107", 4));
-        places.add(new Place("Kosmos", "Sokolska 66", 5));
-        places.add(new Place("Rialto", "św. Jana 24", 5));
+        places.add(new Place(getResources().getString(R.string.cinema1), getResources().getString(R.string.cinema1_address), 4));
+        places.add(new Place(getResources().getString(R.string.cinema1), getResources().getString(R.string.cinema1_address), 3));
+        places.add(new Place(getResources().getString(R.string.cinema1), getResources().getString(R.string.cinema1_address), 5));
         Collections.sort(places,new PlaceComparator());
         PlaceAdapter placeAdapter = new PlaceAdapter(this, places);
 

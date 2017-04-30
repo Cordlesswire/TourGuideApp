@@ -8,4 +8,11 @@
     <string name="restaurant1_address">Kopernika 9</string>
     <string name="restaurant2">Belcanto</string>
     <string name="restaurant2_address">Mickiewicza 91</string>
+    <string name="cinema1">Cinema City</string>
+    <string name="cinema1_address">Gliwicka 44</string>
+    <string name="monument1">Spodek</string>
+    <string name="monument1_address">al Korfantego</string>
+    <string name="museum1">Muzeum 1</string>
+    <string name="museum1_address">Muzeum 1 Addreess</string>
+
 </resources>

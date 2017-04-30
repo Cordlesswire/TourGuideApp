@@ -15,11 +15,9 @@ public class MuseumsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_museums);
 
         ArrayList<Place> places = new ArrayList<>();
-        places.add(new Place("Muzeum Historii Katowice", "Szafranka 9", 5));
-        places.add(new Place("Muzeum Sląskie", "Dobrowolskiego 1", 5));
-        places.add(new Place("Centrum Scenografii Polskiej", "plac Sejmu Slaskiego 2", 0));
-        places.add(new Place("Muzeum najmniejszych książek", "Traktorzystów 5", 4));
-        places.add(new Place("Muzeum misyjne", "Panewnicka 76", 5));
+        places.add(new Place(getResources().getString(R.string.museum1), getResources().getString(R.string.museum1_address), 5));
+        places.add(new Place(getResources().getString(R.string.museum1), getResources().getString(R.string.museum1_address), 5));
+
         PlaceAdapter placeAdapter = new PlaceAdapter(this, places);
         Collections.sort(places,new PlaceComparator());
 
